@@ -1,6 +1,9 @@
+version: "3.3"
+
 services:
   nodeseek-signin:
-    image: lou-xiaohei/nodeseek-signin:latest
+    build: .
+    image: yowiv/nodeseek-signin:latest
     container_name: nodeseek-signin
     environment:
       - IN_DOCKER=true
