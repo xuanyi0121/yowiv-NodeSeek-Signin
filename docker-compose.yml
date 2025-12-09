@@ -2,14 +2,13 @@ version: '3.8'
 
 services:
   nodeseek-signin:
-    build: .
-    image: nodeseek-signin:latest
+    image: lou-xiaohei/nodeseek-signin:latest
     container_name: nodeseek-signin
-    command: ["python", "scheduler.py"]
     environment:
       - IN_DOCKER=true
     env_file:
       - .env
     volumes:
       - ./cookie:/app/cookie
+    command: ["python", "scheduler.py"]
     restart: always
