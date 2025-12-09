@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   nodeseek-signin:
     image: lou-xiaohei/nodeseek-signin:latest
